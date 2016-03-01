@@ -1,0 +1,18 @@
+<header>
+    <div class="header__container header__container--full-width">
+        <img class="logo logo--top logo--en" src="/assets/images/layout/jivochat-logo.png" alt="JivoChat">
+
+        <%= partial 'partials/ui-blocks/menu-top' %>
+
+        <script>
+            $(function(){
+                $(".banner__text--typed").typed({
+                    strings: ["Chat with your website visitors<br> and turn them into<br> customers"],
+                    typeSpeed: 0,
+                    cursorChar: "|"
+                });
+            });
+        </script>
+        <div class="banner"><span class="banner__text--typed"></span></div>
+    </div>
+</header>

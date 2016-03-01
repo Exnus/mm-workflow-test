@@ -1,0 +1,21 @@
+---
+en:
+  paths:
+      home: /
+      product: product
+      pricing: pricing
+      partnership: partnership
+      features: features
+      support: support
+
+  menu:
+      top:
+          reg_btn: Sign up free
+          phone: 8 (800) 333 4490
+          home: Home
+          product: Product
+          pricing: Pricing
+          partnership: Affiliate program
+          features: Features
+          support: Support
+          login: Login

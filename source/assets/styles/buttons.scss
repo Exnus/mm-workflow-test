@@ -1,0 +1,26 @@
+.button {
+  font-size: 15px;
+  padding: 10px 16px;
+  border: 0;
+  @include border-radius(4px);
+
+  &:hover {
+    @include box-shadow(0 1px 6px rgba(0,0,0,0.45));
+  }
+
+  //Sizes
+  &--big {
+    font-size: 22px;
+    padding: 17px 46px;
+  }
+
+  // Colors
+  &--white {
+    color: #000;
+    background: #FFF;
+  }
+  &--green {
+    color: #FFF;
+    background: #00bf54;
+  }
+}

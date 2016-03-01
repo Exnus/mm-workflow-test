@@ -1,0 +1,8 @@
+---
+title: <%= title %>
+---
+
+<h2><%= title %></h2>
+<p><%= date %></p>
+<img src="<%= featuredImage.url %>" alt="<%= featuredImage.title %>">
+<%= Kramdown::Document.new(body).to_html %>

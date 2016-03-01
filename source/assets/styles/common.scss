@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  color: $color-main-text;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $color-main-title;
+  }
+}
+
+.block {
+  display: block;
+  max-width: $max-width;
+  margin: 120px auto 50px auto;
+}
+
+.page {
+  .page__wrapper {
+    .page__wrapper__content {
+      margin: 0 auto;
+      width: $max-width;
+
+      &.center {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.full-width-container {
+  max-width: $max-width;
+  margin: 0 auto;
+}

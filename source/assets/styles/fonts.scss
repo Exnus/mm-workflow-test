@@ -1,0 +1,30 @@
+@font-face {
+  font-family:"Brandon Text W01 Regular";
+  src:url("../fonts/e416bea9-ae84-4323-b9f2-298c13bd7b0a.eot?#iefix");
+  src:url("../fonts/e416bea9-ae84-4323-b9f2-298c13bd7b0a.eot?#iefix") format("eot"),url("../fonts/641c334a-4247-47ff-afdd-8a7dadb13595.woff2") format("woff2"),url("../fonts/98af37a8-b4d4-4d22-a013-32f3041ec1bb.woff") format("woff"),url("../fonts/679da323-4b66-47ac-9819-d48272e64833.ttf") format("truetype"),url("../fonts/760535fc-04e3-4e76-8e8e-064fa58cb3b8.svg#760535fc-04e3-4e76-8e8e-064fa58cb3b8") format("svg");
+}
+@font-face {
+  font-family:"Brandon Text W01 Medium";
+  src:url("../fonts/4160ebd8-d3df-4e55-a3a7-3b4b358ec6e6.eot?#iefix");
+  src:url("../fonts/4160ebd8-d3df-4e55-a3a7-3b4b358ec6e6.eot?#iefix") format("eot"),url("../fonts/47f83927-cb2a-4177-84c3-f51dfef3abd7.woff2") format("woff2"),url("../fonts/c6336333-577d-452e-a925-a3a69935c6ec.woff") format("woff"),url("../fonts/89547f58-ae42-45e4-9e2b-392490cbe927.ttf") format("truetype"),url("../fonts/54adb087-f2c3-4a26-b4b2-824a403ceaac.svg#54adb087-f2c3-4a26-b4b2-824a403ceaac") format("svg");
+}
+@font-face {
+  font-family:"Brandon Text W01 Bold";
+  src:url("../fonts/aad9c5a7-1530-43c7-8365-e733bb3a4c6b.eot?#iefix");
+  src:url("../fonts/aad9c5a7-1530-43c7-8365-e733bb3a4c6b.eot?#iefix") format("eot"),url("../fonts/9e44481d-0ce3-4208-a376-bdc2ff9bc671.woff2") format("woff2"),url("../fonts/8685ba95-06b4-4353-aae3-c849f7671452.woff") format("woff"),url("../fonts/cd7a4c71-905d-4f4f-84c5-dfa517e30711.ttf") format("truetype"),url("../fonts/5fc00f46-e402-4d59-9c9d-6c21ee2b8167.svg#5fc00f46-e402-4d59-9c9d-6c21ee2b8167") format("svg");
+}
+html, body {
+  font-family: "Brandon Text W01 Regular", Helvetica, sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Brandon Text W01 Medium", Helvetica, sans-serif;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 26px;
+  }
+}

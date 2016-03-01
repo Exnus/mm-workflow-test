@@ -1,0 +1,29 @@
+{
+  "name": "site_2.0",
+  "description": "JivoSite Promo Sites",
+  "version": "2.0.0",
+  "devDependencies": {
+    "apidoc": "latest",
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-pagespeed": "^1.0.0",
+    "grunt-pngmin": "latest",
+    "grunt-remove-logging": "latest",
+    "grunt-shell": "latest",
+    "grunt-sitemap": "^1.2.1",
+    "grunt-ssh-deploy": "^0.3.2",
+    "grunt-sweet": "latest",
+    "grunt-tinypng": "^0.6.1",
+    "gulp": "latest",
+    "gulp-uncss": "^1.0.4",
+    "gulp-vulcanize": "^6.1.0",
+    "localtunnel": "^1.8.0",
+    "matchdep": "latest"
+  }
+}

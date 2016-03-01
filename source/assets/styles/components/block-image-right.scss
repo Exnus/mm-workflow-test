@@ -1,0 +1,19 @@
+block-image-right {
+  @extend .block;
+
+  .block-image-right {
+    display: table;
+    clear: both;
+
+    div {
+      float: left;
+      width: 35%;
+      display: table;
+      clear: both;
+    }
+    img {
+      float: right;
+      display: table;
+    }
+  }
+}

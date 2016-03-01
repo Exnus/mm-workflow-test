@@ -1,0 +1,11 @@
+---
+title: Blog
+---
+
+<% data.jivosite.blog_post.each do |id, post| %>
+  <article>
+    <p>
+      <% post["date"] %>&nbsp;<%= link_to post["title"],  '/'+post["slug"] %>
+    </p>
+  </article>
+<% end %>

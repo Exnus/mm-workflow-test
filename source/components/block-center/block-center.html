@@ -1,0 +1,30 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="block-center">
+    <template>
+        <style>
+            div
+            /*::content h1,
+            ::content h2,
+            ::content h3,
+            ::content h4,
+            ::content h5,
+            ::content h6,
+            ::content p,
+            ::content img */ {
+                text-align: center;
+            }
+        </style>
+        <div>
+            <content></content>
+        </div>
+    </template>
+
+    <script>
+        Polymer({
+            is: "block-center"
+        });
+    </script>
+
+</dom-module>
+

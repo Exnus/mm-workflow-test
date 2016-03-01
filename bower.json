@@ -1,0 +1,27 @@
+{
+  "name": "site_2.0",
+  "description": "JivoSite Promo Sites",
+  "main": "",
+  "authors": [
+    "Ilya Kiselevskiy <kiselevskiy@jivosite.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "homepage": "http://jivochat.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}
