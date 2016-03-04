@@ -1,3 +1,28 @@
 block-center {
   @extend .block;
+
+  h1, h2, h3, h4, h5, h6 {
+    padding: 0 3em 0 3em;
+  }
+
+  p {
+    padding: 0 6em 0 6em;
+  }
+
+  .image {
+    max-width: 970px;
+    margin: 2.25em auto 0 auto;
+
+    &.no-shadow {
+      img {
+        @include box-shadow(none);
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      @include box-shadow(0 5px 54px #DFE4E8);
+    }
+  }
 }

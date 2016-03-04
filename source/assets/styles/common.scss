@@ -1,30 +1,71 @@
 html, body {
   height: 100%;
   color: $color-main-text;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    color: $color-main-title;
-  }
+h1, h2, h3, h4, h5, h6 {
+  color: $color-main-title;
+}
+
+p {
+  margin: 1.5em auto 0 auto;
 }
 
 .block {
   display: block;
+  width: 90%;
   max-width: $max-width;
   margin: 120px auto 50px auto;
 }
 
 .page {
-  .page__wrapper {
-    .page__wrapper__content {
-      margin: 0 auto;
-      width: $max-width;
+  &__container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    /*padding-top: 6rem;
+    padding-bottom: 6rem;*/
 
-      &.center {
-        text-align: center;
+    &:before, &:after {
+      content: "";
+      display: table;
+      @include flex-basis(0);
+      @include order(9999);
+    }
+
+    &--bg-grey {
+      background: $light-grey;
+    }
+    &--bg-green {
+      background: $green;
+      color: #FFF;
+      h1, h2, h3, h4, h5, h6 {
+        color: #FFF;
       }
+    }
+    &--bg-dark {
+        background: $dark-grey;
+        color: #525660;
     }
   }
 }
+
+.counter__container {
+  .counter__data {
+    color: $color-main-title;
+    font-size: 173px;
+    letter-spacing: -.05em;
+    line-height: .8em;
+    padding: 0;
+  }
+  p {
+    color: $color-main-title;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: .03em;
+  }
+}
+
 
 .full-width-container {
   max-width: $max-width;

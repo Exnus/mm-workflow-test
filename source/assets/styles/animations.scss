@@ -1,0 +1,274 @@
+[data-js-animation].js-having-animation.js-anim-fade-in,
+[data-js-animation].js-having-animation.js-anim-slide-jsom-top,
+[data-js-animation].js-having-animation.js-anim-slide-jsom-right,
+[data-js-animation].js-having-animation.js-anim-slide-jsom-bottom,
+[data-js-animation].js-having-animation.js-anim-slide-jsom-left,
+[data-js-animation].js-having-animation.animated[data-js-animation*="In"] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js-having-animation {
+  -webkit-animation-delay: .25s;
+  -moz-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.js-having-animation:not(.js-anim-result) {
+  -webkit-animation-name: none;
+  -moz-animation-name: none;
+  animation-name: none;
+}
+
+.js-having-animation:not(.js-anim-result).js-anim-fade-in,
+.js-having-animation:not(.js-anim-result).js-anim-slide-jsom-top,
+.js-having-animation:not(.js-anim-result).js-anim-slide-jsom-right, 
+.js-having-animation:not(.js-anim-result).js-anim-slide-jsom-bottom,
+.js-having-animation:not(.js-anim-result).js-anim-slide-jsom-left, 
+.js-having-animation:not(.js-anim-result).animated[class*="In"] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js-having-animation.js-anim-fade-in,
+.js-having-animation.js-anim-slide-jsom-top,
+.js-having-animation.js-anim-slide-jsom-right,
+.js-having-animation.js-anim-slide-jsom-bottom,
+.js-having-animation.js-anim-slide-jsom-left {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.js-having-animation.js-anim-fade-in {
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.js-having-animation[data-js-animation-duration="0.5s"] {
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+.js-having-animation[data-js-animation-duration="1s"] {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js-having-animation[data-js-animation-duration="1.5s"] {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.js-having-animation[data-js-animation-duration="2s"] {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.js-having-animation[data-js-animation-duration="2.5s"] {
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.js-having-animation.alternate {
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.js-having-animation.js-anim-result.js-anim-fade-in {
+  -webkit-animation-name: jsAnimFadeIn;
+  -moz-animation-name: jsAnimFadeIn;
+  animation-name: jsAnimFadeIn;
+}
+
+.js-having-animation.js-anim-result.js-anim-slide-jsom-top {
+  -webkit-animation-name: jsAnimSlidejsomTop;
+  -moz-animation-name: jsAnimSlidejsomTop;
+  animation-name: jsAnimSlidejsomTop;
+}
+
+.js-having-animation.js-anim-result.js-anim-slide-jsom-right {
+  -webkit-animation-name: jsAnimSlidejsomRight;
+  -moz-animation-name: jsAnimSlidejsomRight;
+  animation-name: jsAnimSlidejsomRight;
+}
+
+.js-having-animation.js-anim-result.js-anim-slide-jsom-bottom {
+  -webkit-animation-name: jsAnimSlidejsomBottom;
+  -moz-animation-name: jsAnimSlidejsomBottom;
+  animation-name: jsAnimSlidejsomBottom;
+}
+
+.js-having-animation.js-anim-result.js-anim-slide-jsom-left {
+  -webkit-animation-name: jsAnimSlidejsomLeft;
+  -moz-animation-name: jsAnimSlidejsomLeft;
+  animation-name: jsAnimSlidejsomLeft;
+}
+
+.not-in-preview .js-having-animation {
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyjsames jsAnimFadeIn {
+  jsom {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyjsames jsAnimFadeIn {
+  jsom {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyjsames jsAnimSlidejsomTop {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyjsames jsAnimSlidejsomTop {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyjsames jsAnimSlidejsomRight {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyjsames jsAnimSlidejsomRight {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyjsames jsAnimSlidejsomBottom {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyjsames jsAnimSlidejsomBottom {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyjsames jsAnimSlidejsomLeft {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyjsames jsAnimSlidejsomLeft {
+  jsom {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.js-widget.js-background-parallax {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

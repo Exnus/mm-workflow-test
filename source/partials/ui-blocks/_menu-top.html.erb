@@ -3,7 +3,34 @@
     <li class="<%= nav_active("features") %>"><a href="<%= t('paths.features') %>"><%= t('menu.top.features') %></a></li>
     <li class="<%= nav_active("pricing") %>"><a href="<%= t('paths.pricing') %>"><%= t('menu.top.pricing') %></a></li>
     <li class="<%= nav_active("partnership") %>"><a href="<%= t('paths.partnership') %>"><%= t('menu.top.partnership') %></a></li>
-    <li class="<%= nav_active("product") %>"><a href="<%= t('paths.product') %>"><%= t('menu.top.product') %></a></li>
+    <li class="dropdown <%= nav_active("product") %>"><a href="<%= t('paths.product') %>"><%= t('menu.top.product') %></a>
+        <div class="submenu__container">
+            <div class="submenu__content">
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
     <li><button class="button button--white"><%= t('menu.top.reg_btn')%></button></li>
     <li><%= t('menu.top.phone') %></li>
 </ul>
+<div class="open-menu-btn">
+    <div class="fr-svg-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+            <g>
+                <g>
+                    <rect x="4" y="11.5" width="56" height="4.8"></rect>
+                </g>
+                <g>
+                    <rect x="4" y="29.5" width="56" height="4.8"></rect>
+                </g>
+                <g>
+                    <rect x="4" y="47.7" width="56" height="4.8"></rect>
+                </g>
+            </g>
+        </svg>
+    </div>
+</div>

@@ -1,10 +1,12 @@
 .color-slider {
+  margin: 42px 0 60px 0;
+
   .cp-hslsaturation, .cp-hsllightness {
     display: none;
   }
 
   .cp-hslhue {
-    width: 610px;
+    width: 55%;
     position: relative;
     margin: 0 auto;
 
@@ -20,7 +22,7 @@
       height: 27px;
       border: 3px solid #FFF;
       @include border_radius(17px);
-      margin-top: -26px;
+      margin-top: -24px;
       margin-left: -17px;
       position: absolute;
     }

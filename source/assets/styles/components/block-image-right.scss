@@ -1,19 +1,32 @@
 block-image-right {
-  @extend .block;
+   @extend .block;
 
-  .block-image-right {
-    display: table;
-    clear: both;
+   .block-image-right {
+     display: table;
+     clear: both;
 
-    div {
-      float: left;
-      width: 35%;
-      display: table;
-      clear: both;
-    }
-    img {
-      float: right;
-      display: table;
-    }
-  }
-}
+     div {
+       display: table;
+       max-width: inherit;
+
+       &:nth-child(2n+1) {
+         float: left;
+         width: calc(39% - 1 / 2 * 6%);
+         margin-right: 3%;
+         clear: left;
+       }
+
+       &:nth-child(2n+2) {
+         float: right;
+         width: calc(61% - 1 / 2 * 6%);
+         margin-left: 3%;
+         clear: none;
+       }
+
+       img {
+         width: 100%;
+         max-width: 100%;
+       }
+     }
+   }
+ }

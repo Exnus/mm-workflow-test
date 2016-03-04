@@ -2,6 +2,10 @@
   font-size: 15px;
   padding: 10px 16px;
   border: 0;
+  outline: none;
+  margin: 1em auto;
+  background: transparent;
+  @include appearance(none);
   @include border-radius(4px);
 
   &:hover {
@@ -13,8 +17,15 @@
     font-size: 22px;
     padding: 17px 46px;
   }
+  &--middle {
+    font-size: 17px;
 
-  // Colors
+  }
+  &--small {
+
+  }
+
+  // BG-Colors
   &--white {
     color: #000;
     background: #FFF;
@@ -22,5 +33,15 @@
   &--green {
     color: #FFF;
     background: #00bf54;
+  }
+
+  // Borders
+  &--green-border {
+    color: #00a651;
+    border: 1px solid #99dbb9;
+  }
+  &--grey-border {
+    color: #414752;
+    border: 1px solid #414752;
   }
 }

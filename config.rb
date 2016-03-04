@@ -15,11 +15,31 @@ activate :i18n do |i18n|
  i18n.templates_dir = "multilingual"
  i18n.mount_at_root = false
 end
+
+activate :minify_html do |html|
+  html.remove_multi_spaces        = true   # Remove multiple spaces
+  html.remove_comments            = true   # Remove comments
+  html.remove_intertag_spaces     = false  # Remove inter-tag spaces
+  html.remove_quotes              = true   # Remove quotes
+  html.simple_doctype             = false  # Use simple doctype
+  html.remove_script_attributes   = true   # Remove script attributes
+  html.remove_style_attributes    = true   # Remove style attributes
+  html.remove_link_attributes     = true   # Remove link attributes
+  html.remove_form_attributes     = false  # Remove form attributes
+  html.remove_input_attributes    = true   # Remove input attributes
+  html.remove_javascript_protocol = true   # Remove JS protocol
+  html.remove_http_protocol       = false  # Remove HTTP protocol
+  html.remove_https_protocol      = false  # Remove HTTPS protocol
+  html.preserve_line_breaks       = false  # Preserve line breaks
+  html.simple_boolean_attributes  = true   # Use simple boolean attributes
+  html.preserve_patterns          = nil    # Patterns to preserve
+end
 activate :minify_css
 activate :minify_javascript
 activate :gzip
 activate :automatic_image_sizes
 activate :automatic_alt_tags
+
 
 # using markdown for contentful stuff
 set :markdown_engine, :kramdown
@@ -87,13 +107,6 @@ activate :blog do |blog|
   blog.per_page = 20
 end
 
-
-# Build-specific configuration
-configure :build do
-  # activate :minify_css
-  # activate :minify_javascript
-end
-
 activate :contentful do |f|
   f.space = {jivosite: 'nk1xo29v4xh0'}
   f.access_token = '9e4fca6dc0b14d54c82990e00b951d170b02c5422c4e6d23220af60d4065e3a7'
@@ -118,3 +131,9 @@ activate :contentful_pages do |extension|
 end
 
 # page '/sitemap.xml', layout: false
+
+
+# Build-specific configuration
+configure :build do
+
+end

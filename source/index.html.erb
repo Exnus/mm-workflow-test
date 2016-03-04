@@ -4,15 +4,13 @@ published: true
 ---
 
 
-
-
-<section class="page__wrapper">
+<section class="page__container">
 
     <block-center>
-      <h2>Modern, personal chat for your site</h2>
-      <color-slider></color-slider>
-      <p>JivoChat fits every site while  it is instantly recognizable and intuitive</p>
-      <button class="button button--big button--green">Get started, it’s free!</button>
+        <h2>Modern, personal chat for your site</h2>
+        <p>JivoChat fits every site while it is instantly recognizable and intuitive</p>
+        <color-slider></color-slider>
+        <button class="button button--big button--green">Get started, it’s free!</button>
 
         <script>
             $("color-slider > .color-slider").ColorPickerSliders({
@@ -25,8 +23,8 @@ published: true
                 labels: {
                     hslhue: ''
                 },
-                onchange: function(container, color) {
-                    var span = $(".cp-marker, header");
+                onchange: function (container, color) {
+                    var span = $(".cp-marker, header, header.banner");
 
                     span.css("background-color", color.tiny.toRgbString());
 
@@ -42,106 +40,114 @@ published: true
     </block-center>
 
     <block-center>
-      <h2>Know your website visitors. Help them and turn into customers</h2>
-      <p>See who your customers are and what actions they do on your website. Communicate with them in easy and personal ways.
-          Chat with visitors in real-time and convert them to customers.</p>
-      <img src="%=staticPrefix=%images/content/agent_app_scr_ru.png" alt="Agent App Window">
+        <h2>Know your website visitors.<br> Help them and turn into customers</h2>
+        <p>See who your customers are and what actions they do on your website. Communicate with them in easy and personal ways.
+            Chat with visitors in real-time and convert them to customers.</p>
+        <div class="image">
+            <img src="/assets/images/page_pics/desktop_app.png" alt="Agent App Window">
+        </div>
     </block-center>
 
     <block-center>
-      <h2>And it’s with you wherever you go</h2>
-      <p>Business is all about productivity, so we’ve got your back. With Jivo agent’s app you’re a ninja of customer sevice you can answer
-          and support business is all about productivity, so we’ve got your back. with Jivo agent’s app you’re a ninja of customer sevice</p>
-      <img src="%=staticPrefix=%images/content/agent_apps_ru.png" alt="Agent App Window">
+        <h2>And it’s with you wherever you go</h2>
+        <p>Business is all about productivity, so we’ve got your back. With Jivo agent’s app you’re a ninja of customer sevice you can answer
+            and support business is all about productivity, so we’ve got your back. with Jivo agent’s app you’re a ninja of customer sevice</p>
+        <div class="image no-shadow">
+            <img src="/assets/images/page_pics/apps.png" alt="Agent App Window">
+        </div>
     </block-center>
 
     <block-image-right>
-      <div>
-          <h2>Don’t feel like texting? Here is something cool</h2>
-          <p>Another cool feature – instant phone connection without dialing orwainting on the line! Website visitor just leaves the phone
-              number in this form and in 30 seconds he or she is talking to one of the agents, creating  a strong WOW-effect</p>
-          <button>Learn more about callbacks</button>
-      </div>
-      <img src="%=staticPrefix=%images/content/callback_scr_ru.png" alt="Agent App Window">
+        <div>
+            <h2>Don’t feel like texting? Here is something cool</h2>
+            <p>Another cool feature – instant phone connection without dialing orwainting on the line!</p>
+            <p>Website visitor just leaves the phone number in this form and in 30 seconds he or she is talking to one of the agents, creating a strong WOW-effect</p>
+            <p><button class="button button--middle button--white button--green-border">Learn more about callbacks</button></p>
+        </div>
+        <div class="no-shadow js-having-animation animated js-anim-slide-from-left">
+            <img src="/assets/images/page_pics/callback.png" alt="Callback">
+        </div>
     </block-image-right>
 
     <block-image-left>
-      <div>
-          <h2>Don’t feel like texting? Here is something cool</h2>
-          <p>Another cool feature – instant phone connection without dialing orwainting on the line! Website visitor just leaves the phone
-              number in this form and in 30 seconds he or she is talking to one of the agents, creating  a strong WOW-effect</p>
-          <button>Learn more about callbacks</button>
-      </div>
-      <img src="%=staticPrefix=%images/content/callback_scr_ru.png" alt="Agent App Window">
+        <div>
+            <h2>Don’t feel like texting? Here is something cool</h2>
+            <p>Another cool feature – instant phone connection without dialing orwainting on the line!</p>
+            <p>Website visitor just leaves the phone number in this form and in 30 seconds he or she is talking to one of the agents, creating a strong WOW-effect</p>
+            <p><button class="button button--middle button--white button--green-border">Learn more about callbacks</button></p>
+        </div>
+        <div class="no-shadow js-having-animation animated js-anim-slide-from-left">
+            <img src="/assets/images/page_pics/callback.png" alt="Callback">
+        </div>
     </block-image-left>
 
-<section class="page__wrapper dark">
+</section>
+
+<section class="page__container page__container--bg-grey">
     <block-center>
-      <h2>A load of features for your customer care team</h2>
-      <p>We’re serious about simplicity. In JivoChat, everything is designed with a single goal – to make your contacts with customers easy and productive </p>
-      <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-      </ul>
-      <button>View product tour</button>
+        <h2>A load of features for your customer care team</h2>
+        <p>We’re serious about simplicity. In JivoChat, everything is designed with a single goal – to make your contacts with customers easy and productive </p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p><button class="button button--middle button--grey-border">View product tour</button></p>
     </block-center>
 
-  <div class="page__wrapper__content center">
-      <h2>Integrate with the services you love</h2>
-      <p>Connect all the tools you use to Jivosite Set up your integration so that you get all your notifications directly within Jivosite — from support requests,
-          code check-ins, and error logs to sales leads—all of them searchable in one central archive.</p>
-      <img src="%=staticPrefix=%assets/images/content/agent_app_scr_ru.png" alt="Agent App Window">
-      <button>See all integrations</button>
-  </div>
+    <block-center>
+        <h2>Integrate with the services you love</h2>
+        <p>Connect all the tools you use to Jivosite Set up your integration so that you get all your notifications directly within Jivosite — from support requests,
+            code check-ins, and error logs to sales leads—all of them searchable in one central archive.</p>
+        <div class="image no-shadow">
+            <img src="/assets/images/page_pics/integrations.png" alt="Integrations">
+        </div>
+        <p><button class="button button--middle button--grey-border">See all integrations</button></p>
+    </block-center>
 </section>
 
-<section class="page__wrapper">
-  <div class="page__wrapper__content center">
-      <h2>why</h2>
-      <p class="counter">120 000</p>
-      <p>sites around the world use jivochat</p>
-      <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-      </ul>
-      <button>View product tour</button>
-  </div>
+<section class="page__container">
+    <block-center>
+        <div class="counter__container">
+            <p class="counter__data">120 000</p>
+            <p>sites around the world use jivochat</p>
+        </div>
 
-  <div class="page__wrapper__content center">
-      <h2>24/7</h2>
-      <h2>Fulltime support for you</h2>
-      <img src="%=staticPrefix=%assets/images/content/agent_app_scr_ru.png" alt="Agent App Window">
-      <p>Sometimes we think that just putting out a consistent number of things will just create some outliers that’ll help us win.
-          Heck, I even believed this for a long time and advised people to just focus on quantity. I don’t think that’s true anymore.</p>
-  </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </block-center>
+
+    <block-center>
+        <h2>24/7</h2>
+        <h2>Fulltime support for you</h2>
+        <p>Sometimes we think that just putting out a consistent number of things will just create some outliers that’ll help us win.
+            Heck, I even believed this for a long time and advised people to just focus on quantity. I don’t think that’s true anymore.</p>
+    </block-center>
 </section>
 
-<section class="page__wrapper">
-  <div class="page__wrapper__content center">
-      <h2>Don’t keep your clients waiting. Time-unlimited free version avaliable!</h2>
-      <p>No credit card required</p>
-      <p>sites around the world use jivochat</p>
-      <button>Try it for free</button>
-  </div>
+<section class="page__container page__container--bg-green">
+    <block-center>
+        <h2>Don’t keep your clients waiting.<br> Time-unlimited free version avaliable!</h2>
+        <p><button class="button button--middle button--white">Try it for free</button></p>
+        <p>No credit card required</p>
+    </block-center>
 </section>
 
-<footer class="page__footer">
-    <div class="footer"></div>
-</footer>
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "layout/jivochat-logo.png" %>
-  </div>
-  <h1>Site is Running</h1>
-  <p class="doc">
-    <%= link_to "About", "/about" %>
-    <%= link_to "Blog", "/blog/list" %>
-  </p>
-</div>
+<!--<div class="welcome">
+    <div class="logo">
+        <%= image_tag "layout/jivochat-logo.png" %>
+    </div>
+    <h1>Site is Running</h1>
+    <p class="doc">
+        <%= link_to "About", "/about" %>
+        <%= link_to "Blog", "/blog/list" %>
+    </p>
+</div>-->

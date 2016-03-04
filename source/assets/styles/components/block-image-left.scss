@@ -6,14 +6,27 @@ block-image-left {
     clear: both;
 
     div {
-      float: right;
-      width: 35%;
       display: table;
-      clear: both;
-    }
-    img {
-      float: left;
-      display: table;
+      max-width: inherit;
+
+      &:nth-child(2n+2) {
+        float: left;
+        width: calc(61% - 1 / 2 * 6%);
+        margin-right: 3%;
+        clear: left;
+      }
+
+      &:nth-child(2n+1) {
+        float: right;
+        width: calc(39% - 1 / 2 * 6%);
+        margin-left: 3%;
+        clear: none;
+      }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 }
